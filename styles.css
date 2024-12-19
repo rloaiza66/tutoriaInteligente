@@ -1,0 +1,234 @@
+/* styles.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    background-color: #FBA536;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header .logo img {
+    height: 120px;
+    width: auto;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBA536;
+    padding: 10px 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #004CF2;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #FBA536, #FF5362);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #004CF2;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #00A388;
+}
+
+/* Sección Quiénes Somos */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Servicios */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #004CF2;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #f1f1f1;
+}
+
+/* Contacto */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 2px solid #FBA536;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+    color: #666;
+}
+
+.contact button {
+    background-color: #00A388;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #FBA536;
+}
+
+/* Pie de Página */
+.footer {
+    background-color: #004CF2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .social-links p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer .social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer i {
+    margin-right: 8px;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
